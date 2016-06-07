@@ -1,21 +1,22 @@
 ## Project Name
---Short Description
+Vacation Finder
 
 ## Features
---What does it do?
+This site will help the user choose which of three locations they should go on vacation.
 
-##Languages
---List languages
+##Technologies
+Bootstrap, JS, JQuery
 
 ## Usage
-To view the site, you can go to --Insert your addresses https://mehequanna.github.io/portfolio.
-To use the code, you can clone the repository at --Use your addresses [https://github.com/Mehequanna/portfolio](https://github.com/Mehequanna/portfolio).
+To view the site, you can go to https://mehequanna.github.io/epicodus-project2.
+To use the code, you can clone the repository at [https://github.com/Mehequanna/epicodus-project2](https://github.com/Mehequanna/epicodus-project2).
 
---Simple use instructions.
+1. Download the repository.
+2. Open index.html in your browser.
 
-## Author/s
---Name/s
+## Author
+Stephen Emery
 
 ##License
-This work can be used under the The MIT License.
-Copyright (c) 2016 --Name
+This work can be used under the MIT License.
+Copyright (c) 2016 Stephen Emery
