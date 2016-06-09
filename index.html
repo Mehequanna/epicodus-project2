@@ -22,8 +22,61 @@
   <body>
     <div class="container">
       <h1>Find Your Dream Vacation Location!</h1>
-      <form class="" action="index.html" method="post">
+      <form id="vacationForm">
+        <div class="form-group">
+          <label for="nameInput">Name</label>
+          <input class="form-control" id="nameInput" placeholder="John or Jane Doe">
+        </div>
+        <div class="form-group">
+          <label for="ageInput">Age</label>
+          <input class="form-control" id="ageInput" placeholder="32">
+        </div>
 
+        <div class"form-group">
+          <h3>Landscape</h3>
+          <p>What do you want to look at?</p>
+          <label class="checkbox-inline">
+            <input type="checkbox" name="landscape" value="option1"> 1
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" name="landscape" value="option2"> 2
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" name="landscape" value="option3"> 3
+          </label>
+        </div>
+
+        <div class"form-group">
+          <h3>Sounds</h3>
+          <p>What do you want to hear?</p>
+          <label class="checkbox-inline">
+            <input type="checkbox" name="sounds" value="option1"> 1
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" name="sounds" value="option2"> 2
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" name="sounds" value="option3"> 3
+          </label>
+        </div>
+
+        <div class"form-group">
+          <h3>Nightlife</h3>
+          <p>What do you want to do at night?</p>
+          <label class="checkbox-inline">
+            <input type="checkbox" name="nightlife" value="option1"> 1
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" name="nightlife" value="option2"> 2
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" name="nightlife" value="option3"> 3
+          </label>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" name="btn btn-primary">Show me<br> the location!</button>
+        </div>
       </form>
       <div id="result-mountain">
         <h2>Mountains</h2>
