@@ -36,19 +36,16 @@
           <h3>Landscape</h3>
           <p>What do you want to look at?</p>
           <label class="radio-inline">
-            <input type="radio" id="landscape" value="landscapeBeach">
-            Sand, water, and blue skies!<br>
-            <img src="img/beach.jpg" alt="Beach in the daylight" />
+            <input type="radio" name="landscape" value="landscapeBeach">
+            Sand, water, and blue skies!
           </label>
           <label class="radio-inline">
             <input type="radio" name="landscape" value="landscapeMountains">
-            Trees, animals, and mountians!<br>
-            <img src="img/mountain.jpg" alt="Mountains" />
+            Trees, animals, and mountians!
           </label>
           <label class="radio-inline">
             <input type="radio" name="landscape" value="landscapeCity">
-            Skyscrapers, fashionable people, and store fronts.<br>
-            <img src="img/city.jpg" alt="City Skyline" />
+            Skyscrapers, fashionable people, and store fronts.
           </label>
         </div>
 
@@ -64,7 +61,7 @@
             Waves crashing on a nearby shore!
           </label>
           <label class="radio-inline">
-            <input type="radio" name="sounds" value="soundsMountain">
+            <input type="radio" name="sounds" value="soundsMountains">
             Silence and owls hooting.
           </label>
         </div>
@@ -77,7 +74,7 @@
             Clubbing, shopping, and nice restaraunts.
           </label>
           <label class="radio-inline">
-            <input type="radio" name="nightlife" value="nightlifeMountain">
+            <input type="radio" name="nightlife" value="nightlifeMountains">
             Hangout with the fireflies!
           </label>
           <label class="radio-inline">
@@ -90,14 +87,25 @@
           <button type="submit" name="btn btn-primary">Show me<br> the location!</button>
         </div>
       </form>
-      <div id="result-mountain">
+      <div id="result-mountains">
         <h2>Mountains</h2>
+        <br>
+        <img src="img/mountain.jpg" alt="Mountains" />
       </div>
       <div id="result-city">
         <h2>City</h2>
+        <br>
+        <img src="img/city.jpg" alt="City Skyline" />
       </div>
       <div id="result-beach">
         <h2>Beach</h2>
+        <br>
+        <img src="img/beach.jpg" alt="Beach in the daylight" />
+      </div>
+      <div id="result-indecisive">
+        <h2>You're indecisive!</h2>
+        <br>
+        <img src="img/biodome.jpg" alt="Beach in the daylight" />
       </div>
     </div>
   </body>
