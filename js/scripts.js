@@ -7,14 +7,12 @@ $(document).ready(function() {
     var sounds = $("input:radio[name=sounds]:checked").val();
     var nightlife = $("input:radio[name=nightlife]:checked").val();
 
+    // This will add the name and age into hidden divs
+    $(".name").text(name);
+    $(".age").text(age);
+
     // Variable to determine result
     var locationScore = 0;
-
-    // Unique results
-    if (landscape != sounds && landscape != nightlife && nightlife != sounds) {
-      $("#result-indecisive").show("slow");
-      $("#result-mountains, #result-beach, #result-city").hide('slow');
-    }
 
     // Results caulculations, beach = +6, city = +3, mountains = +1
     if (landscape === "beach") {
@@ -47,7 +45,10 @@ $(document).ready(function() {
     }
 
     // Actions based on locationScore
-    if (locationScore <= 6 ) {
+    if (landscape != sounds && landscape != nightlife && nightlife != sounds) {
+      $("#result-indecisive").show("slow");
+      $("#result-mountains, #result-beach, #result-city").hide('slow');
+    } else if (locationScore <= 6 ) {
       $("#result-mountains").show('slow');
       $("#result-city, #result-indecisive, #result-beach").hide('slow');
     } else if (locationScore <= 10) {
