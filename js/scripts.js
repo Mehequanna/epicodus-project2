@@ -13,6 +13,7 @@ $(document).ready(function() {
     // Unique results
     if (landscape != sounds && landscape != nightlife && nightlife != sounds) {
       $("#result-indecisive").show("slow");
+      $("#result-mountains, #result-beach, #result-city").hide('slow');
     }
 
     // Results caulculations, beach = +6, city = +3, mountains = +1
@@ -40,22 +41,22 @@ $(document).ready(function() {
       locationScore += 1;
     }
 
-
+    // This will resolve the issue of overlapping scores. (For example, if I chose beach x2 and mountains x1 I'd get a score of 11 and it would show the beach result. If I chose city x2 and beach x1 I'd also get 11 and it would show the beach result. The second result would be incorrect based on the choices.)
     if (locationScore === 7 && nightlife === "beach" || locationScore === 7 && sounds === "beach" || locationScore === 7 && landscape === "beach" || locationScore === 11 && nightlife === "beach" || locationScore === 11 && sounds === "beach" || locationScore === 11 && landscape === "beach") {
       locationScore -= 1;
     }
-    console.log(locationScore);
 
     // Actions based on locationScore
     if (locationScore <= 6 ) {
       $("#result-mountains").show('slow');
+      $("#result-city, #result-indecisive, #result-beach").hide('slow');
     } else if (locationScore <= 10) {
       $("#result-city").show('slow');
+      $("#result-mountains, #result-indecisive, #result-beach").hide('slow');
     } else if (locationScore <= 15) {
       $("#result-beach").show('slow');
+      $("#result-mountains, #result-indecisive, #result-city").hide('slow');
     }
-
-    // $("#result-beach, #result-city").show();
 
     event.preventDefault();
   });
