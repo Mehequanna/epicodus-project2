@@ -3,3 +3,8 @@
 #result-city {
   display: none;
 }
+
+img {
+  height: auto;
+  width: 150px;
+}
