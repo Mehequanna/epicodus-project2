@@ -40,7 +40,7 @@ $(document).ready(function() {
     }
 
     // This will resolve the issue of overlapping scores. (For example, if I chose beach x2 and mountains x1 I'd get a score of 11 and it would show the beach result. If I chose city x2 and beach x1 I'd also get 11 and it would show the beach result. The second result would be incorrect based on the choices.)
-    if (locationScore === 7 && nightlife === "beach" || locationScore === 7 && sounds === "beach" || locationScore === 7 && landscape === "beach" || locationScore === 11 && nightlife === "beach" || locationScore === 11 && sounds === "beach" || locationScore === 11 && landscape === "beach") {
+    if (locationScore === 7 && nightlife === "beach" || locationScore === 7 && sounds === "beach" || locationScore === 7 && landscape === "beach" || locationScore === 11 && nightlife === "beach" && sounds === "city" && landscape === "city" || locationScore === 11 && sounds === "beach" && nightlife === "city" && landscape === "city" || locationScore === 11 && landscape === "beach" && sounds === "city" && nightlife === "city") {
       locationScore -= 1;
     }
 
