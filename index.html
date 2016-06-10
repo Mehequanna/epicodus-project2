@@ -23,70 +23,79 @@
     <div class="container">
       <h2>Find Your Dream Vacation Location!</h2>
       <form id="vacationForm">
-        <div class="form-group">
+        <div class="form-group col-md-4">
           <label for="nameInput">Name</label>
           <input class="form-control" id="nameInput" placeholder="John or Jane Doe">
         </div>
-        <div class="form-group">
+        <div class="form-group col-md-4">
           <label for="ageInput">Age</label>
           <input class="form-control" id="ageInput" placeholder="32">
         </div>
 
-        <div class"form-group">
-          <h4>Landscape</h4>
-          <p>What do you want to look at?</p>
-          <label class="radio-inline">
-            <input type="radio" name="landscape" value="beach">
-            Sand, water, and blue skies!
-          </label>
-          <label class="radio-inline">
-            <input type="radio" name="landscape" value="mountains">
-            Trees, animals, and mountians!
-          </label>
-          <label class="radio-inline">
-            <input type="radio" name="landscape" value="city">
-            Skyscrapers, fashionable people, and store fronts.
-          </label>
+        <div class="questions1">
+          <div class"form-group">
+            <h4>Landscape</h4>
+            <p>What do you want to look at?</p>
+            <label class="radio">
+              <input type="radio" name="landscape" value="beach">
+              Sand, water, and blue skies!
+            </label>
+            <label class="radio">
+              <input type="radio" name="landscape" value="mountains">
+              Trees, animals, and mountians!
+            </label>
+            <label class="radio">
+              <input type="radio" name="landscape" value="city">
+              Skyscrapers, food carts, and store fronts.
+            </label>
+          </div>
         </div>
 
-        <div class"form-group">
-          <h4>Sounds</h4>
-          <p>What do you want to hear?</p>
-          <label class="radio-inline">
-            <input type="radio" name="sounds" value="city">
-            Hustle and bustle of people and vehicles.
-          </label>
-          <label class="radio-inline">
-            <input type="radio" name="sounds" value="beach">
-            Waves crashing on a nearby shore!
-          </label>
-          <label class="radio-inline">
-            <input type="radio" name="sounds" value="mountains">
-            Silence and owls hooting.
-          </label>
+        <div class="questions">
+          <div class"form-group">
+            <h4>Sounds</h4>
+            <p>What do you want to hear?</p>
+            <label class="radio">
+              <input type="radio" name="sounds" value="city">
+              Public transit and people.
+            </label>
+            <label class="radio">
+              <input type="radio" name="sounds" value="beach">
+              Waves crashing on a nearby shore!
+            </label>
+            <label class="radio">
+              <input type="radio" name="sounds" value="mountains">
+              Silence and owls hooting.
+            </label>
+          </div>
         </div>
 
-        <div class"form-group">
-          <h4>Nightlife</h4>
-          <p>What do you want to do at night?</p>
-          <label class="radio-inline">
-            <input type="radio" name="nightlife" value="city">
-            Clubbing, shopping, and nice restaraunts.
-          </label>
-          <label class="radio-inline">
-            <input type="radio" name="nightlife" value="mountains">
-            Hangout with the fireflies!
-          </label>
-          <label class="radio-inline">
-            <input type="radio" name="nightlife" value="beach">
-            Swim in the moonlight.
-          </label>
+        <div class="questions">
+          <div class"form-group">
+            <h4>Nightlife</h4>
+            <p>What do you want to do at night?</p>
+            <label class="radio">
+              <input type="radio" name="nightlife" value="city">
+              Clubbing, shopping, and nice restaraunts.
+            </label>
+            <label class="radio">
+              <input type="radio" name="nightlife" value="mountains">
+              Hangout with the fireflies!
+            </label>
+            <label class="radio">
+              <input type="radio" name="nightlife" value="beach">
+              Swim in the moonlight.
+            </label>
+          </div>
         </div>
 
-        <div class="form-group">
-          <button type="submit" name="btn btn-primary">Show me<br> the location!</button>
+        <div class="button">
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary">Show me<br> the location!</button>
+          </div>
         </div>
       </form>
+
       <div id="result-mountains">
         <h2>Mountains</h2>
         <img src="img/mountain.jpg" alt="Mountains" />

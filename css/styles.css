@@ -5,7 +5,30 @@
   display: none;
 }
 
+.questions1,
+.questions,
+.button,
 img {
+  display: block;
+  float: left;
+  margin: 10px 25px;
+}
+
+.button,
+.questions1,
+#result-beach,
+#result-city,
+#result-indecisive,
+#result-mountains {
+  clear: left;
+}
+
+img {
+  margin: 15px 0;
   height: auto;
-  width: 150px;
+  width: 250px;
+}
+
+h2 {
+  text-align: center;
 }

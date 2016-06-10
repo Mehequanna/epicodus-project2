@@ -48,6 +48,8 @@ $(document).ready(function() {
     if (landscape != sounds && landscape != nightlife && nightlife != sounds) {
       $("#result-indecisive").show("slow");
       $("#result-mountains, #result-beach, #result-city").hide('slow');
+    } else if (locationScore === 0) {
+      alert("Please select some answers!");
     } else if (locationScore <= 6 ) {
       $("#result-mountains").show('slow');
       $("#result-city, #result-indecisive, #result-beach").hide('slow');
