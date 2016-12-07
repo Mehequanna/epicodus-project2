@@ -2,13 +2,16 @@
 Vacation Finder
 
 ## Features
-This site will help the user choose which of three locations they should go on vacation.
+This is a quiz site to help the user choose which of three locations they should go on vacation.
+
+![screenshot of project](intro2.png)
 
 ##Technologies
 Bootstrap, JS, JQuery
 
 ## Usage
 To view the site, you can go to https://mehequanna.github.io/epicodus-project2.
+
 To use the code, you can clone the repository at [https://github.com/Mehequanna/epicodus-project2](https://github.com/Mehequanna/epicodus-project2).
 
 1. Download the repository.
