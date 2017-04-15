@@ -6,7 +6,7 @@ This is a quiz site to help the user choose which of three locations they should
 
 ![screenshot of project](intro2.png)
 
-##Technologies
+## Technologies
 Bootstrap, JS, JQuery
 
 ## Usage
@@ -20,6 +20,6 @@ To use the code, you can clone the repository at [https://github.com/Mehequanna/
 ## Author
 Stephen Emery
 
-##License
+## License
 This work can be used under the MIT License.
 Copyright (c) 2016 Stephen Emery
